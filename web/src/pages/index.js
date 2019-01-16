@@ -1,10 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-<<<<<<< HEAD
 import { mapEdgesToNodes, filterOutDocsWithoutSlugs } from '../lib/helpers'
-=======
-import { mapEdgesToNodes } from '../lib/helpers'
->>>>>>> first commit
 import BlogPostPreviewGrid from '../components/blog-post-preview-grid'
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
@@ -14,25 +10,17 @@ import Layout from '../containers/layout'
 
 export const query = graphql`
   query IndexPageQuery {
-<<<<<<< HEAD
-    site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
-=======
     site: sanitySiteSettings(_id: { eq: "siteSettings" }) {
->>>>>>> first commit
       title
       description
       keywords
     }
 
-<<<<<<< HEAD
-    projects: allSanityProject(limit: 6, sort: { fields: [publishedAt], order: DESC }) {
-=======
     projects: allSanityProject(
       limit: 6
       sort: { fields: [publishedAt], order: DESC }
       filter: { slug: { current: { ne: null } } }
     ) {
->>>>>>> first commit
       edges {
         node {
           id
@@ -67,15 +55,11 @@ export const query = graphql`
       }
     }
 
-<<<<<<< HEAD
-    posts: allSanityPost(limit: 6, sort: { fields: [publishedAt], order: DESC }) {
-=======
     posts: allSanityPost(
       limit: 6
       sort: { fields: [publishedAt], order: DESC }
       filter: { slug: { current: { ne: null } } }
     ) {
->>>>>>> first commit
       edges {
         node {
           id
@@ -124,7 +108,6 @@ const IndexPage = props => {
     )
   }
 
-<<<<<<< HEAD
   const site = (data || {}).site
   const postNodes = (data || {}).posts
     ? mapEdgesToNodes(data.posts).filter(filterOutDocsWithoutSlugs)
@@ -135,16 +118,7 @@ const IndexPage = props => {
 
   if (!site) {
     throw new Error(
-      'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
-=======
-  const site = data && data.site
-  const postNodes = data && data.posts && mapEdgesToNodes(data.posts)
-  const projectNodes = data && data.projects && mapEdgesToNodes(data.projects)
-
-  if (!site) {
-    throw new Error(
       'Missing "Site settings". Open the studio at http://localhost:3333 and add "Site settings" data'
->>>>>>> first commit
     )
   }
 
@@ -153,33 +127,18 @@ const IndexPage = props => {
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
         <h1 hidden>Welcome to {site.title}</h1>
-<<<<<<< HEAD
-        {projectNodes && (
+        {projectNodes && projectNodes.length > 0 && (
           <ProjectPreviewGrid
             title="Latest projects"
             nodes={projectNodes}
             browseMoreHref="/projects/"
           />
         )}
-        {postNodes && (
+        {postNodes && postNodes.length > 0 && (
           <BlogPostPreviewGrid
             title="Latest blog posts"
             nodes={postNodes}
             browseMoreHref="/blog/"
-=======
-        {projectNodes && projectNodes.length > 0 && (
-          <ProjectPreviewGrid
-            title='Latest projects'
-            nodes={projectNodes}
-            browseMoreHref='/projects/'
-          />
-        )}
-        {postNodes && postNodes.length > 0 && (
-          <BlogPostPreviewGrid
-            title='Latest blog posts'
-            nodes={postNodes}
-            browseMoreHref='/blog/'
->>>>>>> first commit
           />
         )}
       </Container>
