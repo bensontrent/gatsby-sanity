@@ -27,14 +27,7 @@ This examples combines [Gatsby](https://www.gatsbyjs.org/) site generation with 
   * 📸 gatsby-image support
   * 🔧 Minimal configuration
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Sanity Studio with a schema for**
-  * 🏢 Company info
-  * 📃 Pages
-  * 👨🏼‍🎨 Projects
-  * 👩🏾‍💻 People
-  * 📰 Blog posts
+<img alt="Screenshot of the Gatsby Frontend" src="https://cdn.sanity.io/images/3do82whm/production/98c052ccd208759285a04a272dc5d297efb41229-2028x1510.png" width="500">
 
 ## Installation
 
@@ -51,7 +44,6 @@ Read the [step-by-step blog post](https://www.sanity.io/blog/how-to-quickly-set-
 
 ```sh
 
->>>>>>> first commit
 git clone git@github.com:sanity-io/example-company-website-gatsby-sanity-combo.git
 cd example-company-website-gatsby-sanity-combo
 npm install
@@ -81,7 +73,6 @@ npm init
 ## Enable Gatsby watch mode for drafts
 
 We have enabled the watch mode in the `gatsby-source-sanity` plugin. That means that means that your frontend will automatically update with content changes whenever you publish them. If you want the frontend to show content changes in real time, you must do the following:
->>>>>>> first commit
 
 * Go to [manage.sanity.io](https://manage.sanity.io) and find your project (or run the command `sanity manage` in the studio folder)
 * Navigate to Settings->API and scroll down to the **Tokens** section
@@ -93,13 +84,6 @@ If you restart the local development server, it will now show unpublished change
 
 ## Usage example
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-This project demos Sanity.io with Gatsby using our [source plugin](https://www.gatsbyjs.org/packages/gatsby-source-sanity). It's a good starter for a simple company site, a portfolio site for an agency or a personal blog with an attached portfolio.
-=======
-This project demos Sanity.io with [Gatsby using our Gatsby LINK ME]() source plugin. It's a good starter for a simple company site, a portfolio site for an agency or a personal blog with an attached portfolio.
->>>>>>> first commit
-=======
 This project demos Sanity.io with Gatsby using our [source plugin](https://www.gatsbyjs.org/packages/gatsby-source-sanity). It's a good starter for a simple company site, a portfolio site for an agency or a personal blog with an attached portfolio.
 >>>>>>> some improvements to the readme
 
@@ -121,13 +105,11 @@ npm start
 
 ### Development workflow
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 We wrote a [blog post](https://www.sanity.io/blog/get-started-with-gatsby-and-structured-content) about how to use this example, but if you would like to just start tinkering:
 
 - The Sanity Studio keeps its schemas in `./studio/schemas`. We will hot reload the editor when you edit them so just start experimenting. [Read more about our schemas here](https://www.sanity.io/docs/content-studio/the-schema).
 - We followed Gatsby conventions and [you can read all about them here](https://www.gatsbyjs.org/tutorial/).
-=======
+
 CLEAN ME UP
 
 We wrote a blog post about how to use this example, but if you would like to just start tinkering:
@@ -135,24 +117,12 @@ We wrote a blog post about how to use this example, but if you would like to jus
 - The Sanity Studio keeps its schemas in `
 - ./studio/schemas`. We will hot reload the editor when you edit them so just start experimenting. Read more about our schemas here
 - We followed Gatsby conventions and you can read all about them here
->>>>>>> first commit
-=======
-We wrote a blog post about how to use this example, but if you would like to just start tinkering:
-
-- The Sanity Studio keeps its schemas in `./studio/schemas`. We will hot reload the editor when you edit them so just start experimenting. [Read more about our schemas here](https://www.sanity.io/docs/content-studio/the-schema).
-- We followed Gatsby conventions and [you can read all about them here](https://www.gatsbyjs.org/tutorial/).
->>>>>>> some improvements to the readme
-- If you want Gatsby to not throw errors on missing fields for unpopulated data you need to redeploy the GraphQL API so we can generate schemas – `sanity graphql deploy`
 
 
 ## Deployment
 
 ```sh
-<<<<<<< HEAD
-# Deploy a GraphQL API and schema to Sanity
-=======
 # Deploy GraphQL to the Sanity API
->>>>>>> first commit
 npm run graphql-deploy
 
 # Deploy the Sanity Studio to *.sanity.studio
