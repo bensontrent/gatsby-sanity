@@ -66,7 +66,7 @@ We have enabled the watch mode in the `gatsby-source-sanity` plugin, which means
 # Install the Sanity CLI
 npm install -g @sanity/cli
 # Set up Sanity,io account and project (≈ 45s)
-npm init
+npm run init
 
 ```
 
