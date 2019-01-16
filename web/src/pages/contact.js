@@ -10,7 +10,11 @@ import { responsiveTitle1 } from '../components/typography.module.css'
 
 export const query = graphql`
   query ContactPageQuery {
+<<<<<<< HEAD
     page: sanityPage(_id: { regex: "/(drafts.|)contact/" }) {
+=======
+    page: sanityPage(_id: { eq: "contact" }) {
+>>>>>>> first commit
       title
       _rawBody
     }
@@ -32,7 +36,11 @@ const ContactPage = props => {
 
   if (!page) {
     throw new Error(
+<<<<<<< HEAD
       'Missing "Contact" page data. Open the studio at http://localhost:3333 and add "Contact" page data and restart the development server.'
+=======
+      'Missing "Contact" page data. Open the studio at http://localhost:3333 and add "Contact" page data'
+>>>>>>> first commit
     )
   }
 

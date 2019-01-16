@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { MdBusiness } from 'react-icons/md'
+=======
+import MdBusiness from 'react-icons/lib/md/business'
+>>>>>>> first commit
 
 export default {
   name: 'companyInfo',

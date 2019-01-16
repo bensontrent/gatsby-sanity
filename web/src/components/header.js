@@ -1,6 +1,10 @@
 import { Link } from 'gatsby'
 import React from 'react'
+<<<<<<< HEAD
 import Icon from './icons'
+=======
+import Icon from './icon'
+>>>>>>> first commit
 import { cn } from '../lib/helpers'
 
 import styles from './header.module.css'

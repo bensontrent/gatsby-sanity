@@ -1,19 +1,29 @@
 {
+<<<<<<< HEAD
   "private": false,
   "name": "gatsby-sanity",
   "version": "1.0.0",
+=======
+  "private": true,
+  "name": "example-company-website-gatsby-sanity-combo",
+  "version": "0.0.0",
+>>>>>>> first commit
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
     "clean": "lerna clean",
     "deploy": "lerna run deploy",
+<<<<<<< HEAD
     "empty-cache": "rimraf web/.cache",
     "init": "cd studio && sanity init && lerna run graphql-deploy",
+=======
+>>>>>>> first commit
     "format": "lerna run format",
     "graphql-deploy": "lerna run graphql-deploy",
     "lint": "lerna run lint",
     "now-deploy": "now && now alias",
     "postinstall": "lerna bootstrap",
     "sanity-deploy": "lerna run sanity-deploy",
+<<<<<<< HEAD
     "start": "lerna run empty-cache && lerna run start --parallel",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +32,12 @@
     "lerna": "^3.13.0",
     "rimraf": "^2.6.3",
     "tar": ">=4.4.2"
+=======
+    "start": "lerna run start --parallel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "lerna": "^3.9.0"
+>>>>>>> first commit
   }
 }

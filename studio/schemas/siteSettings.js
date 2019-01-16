@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import MdSettings from 'react-icons/md/'
+=======
+import MdSettings from 'react-icons/lib/md/settings'
+>>>>>>> first commit
 
 export default {
   name: 'siteSettings',

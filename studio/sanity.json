@@ -1,5 +1,6 @@
 {
   "root": true,
+<<<<<<< HEAD
   "api": {
     "projectId": "8trsofmx",
     "dataset": "production"
@@ -7,6 +8,15 @@
   "project": {
     "name": "gatsbysanity"
   },
+=======
+  "project": {
+    "name": "Gatsby Demo"
+  },
+  "api": {
+    "projectId": "7j9cnsfo",
+    "dataset": "production"
+  },
+>>>>>>> first commit
   "plugins": [
     "@sanity/base",
     "@sanity/components",

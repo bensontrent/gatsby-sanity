@@ -1,14 +1,22 @@
+<<<<<<< HEAD
 const {
   api: { projectId, dataset }
 } = require('../studio/sanity.json')
+=======
+
+const { api: { projectId, dataset } } = require('../studio/sanity.json')
+>>>>>>> first commit
 
 require('dotenv').config()
 
 module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
+<<<<<<< HEAD
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+=======
+>>>>>>> first commit
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
@@ -21,6 +29,7 @@ module.exports = {
         watchMode: true,
         overlayDrafts: true
       }
+<<<<<<< HEAD
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -38,6 +47,8 @@ module.exports = {
         siteSpeedSampleRate: 10,
         cookieDomain: 'bensontrent.com'
       }
+=======
+>>>>>>> first commit
     }
   ]
 }

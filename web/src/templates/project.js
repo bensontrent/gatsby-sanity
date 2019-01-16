@@ -86,7 +86,11 @@ const ProjectTemplate = props => {
   const project = data && data.project
   return (
     <Layout>
+<<<<<<< HEAD
       {errors && <SEO title="GraphQL Error" />}
+=======
+      {errors && <SEO title='GraphQL Error' />}
+>>>>>>> first commit
       {project && <SEO title={project.title || 'Untitled'} />}
 
       {errors && (

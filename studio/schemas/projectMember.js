@@ -20,10 +20,14 @@ export default {
           { title: 'Designer', value: 'designer' },
           { title: 'Developer', value: 'developer' },
           { title: 'Editor', value: 'editor' },
+<<<<<<< HEAD
           { title: 'Programmer', value: 'programmer' },
           { title: 'Manager', value: 'manager' },
           { title: 'Photographer', value: 'photographer' },
           { title: 'Copywriter', value: 'copywriter' }
+=======
+          { title: 'Manager', value: 'manager' }
+>>>>>>> first commit
         ]
       }
     }

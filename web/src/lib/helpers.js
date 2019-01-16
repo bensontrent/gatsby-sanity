@@ -9,10 +9,13 @@ export function mapEdgesToNodes (data) {
   return data.edges.map(edge => edge.node)
 }
 
+<<<<<<< HEAD
 export function filterOutDocsWithoutSlugs ({ slug }) {
   return (slug || {}).current
 }
 
+=======
+>>>>>>> first commit
 export function getBlogUrl (publishedAt, slug) {
   return `/blog/${format(publishedAt, 'YYYY/MM')}/${slug.current || slug}/`
 }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { MdApps } from 'react-icons/md'
+=======
+import MdApps from 'react-icons/lib/md/apps'
+>>>>>>> first commit
 
 export default {
   name: 'category',

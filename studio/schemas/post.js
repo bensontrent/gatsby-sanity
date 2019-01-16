@@ -12,7 +12,10 @@ export default {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
+<<<<<<< HEAD
       description: 'Some frontend will require a slug to be set to be able to show the post',
+=======
+>>>>>>> first commit
       options: {
         source: 'title',
         maxLength: 96
@@ -21,7 +24,10 @@ export default {
     {
       name: 'publishedAt',
       title: 'Published at',
+<<<<<<< HEAD
       description: 'You can use this field to schedule post where you show them',
+=======
+>>>>>>> first commit
       type: 'datetime'
     },
     {

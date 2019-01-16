@@ -9,7 +9,11 @@ import RoleList from './role-list'
 
 import styles from './project.module.css'
 
+<<<<<<< HEAD
 function Project(props) {
+=======
+function Project (props) {
+>>>>>>> first commit
   const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props
   return (
     <article className={styles.root}>
@@ -39,7 +43,11 @@ function Project(props) {
                   : format(new Date(publishedAt), 'MMMM Do YYYY')}
               </div>
             )}
+<<<<<<< HEAD
             {members && <RoleList items={members} title="Authors" />}
+=======
+            {members && <RoleList items={members} title='Authors' />}
+>>>>>>> first commit
             {categories && (
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>

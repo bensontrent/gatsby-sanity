@@ -1,6 +1,13 @@
 @import './vars.css';
+<<<<<<< HEAD
 html {
   font-family: 'Open Sans', sans-serif;
+=======
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: var(--font-base-size);
+>>>>>>> first commit
   line-height: var(--font-base-line-height);
 }
 
@@ -11,6 +18,7 @@ body {
   margin: 0;
 }
 
+<<<<<<< HEAD
 html,
 body,
 body > div,
@@ -24,3 +32,8 @@ h3,
 title {
   font-family: 'Montserrat', sans-serif;
 }
+=======
+html, body, body > div, body > div > div {
+  height: 100%;
+}
+>>>>>>> first commit
