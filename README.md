@@ -79,6 +79,8 @@ npm run init
 
 ```
 
+See the [getting started video](https://www.youtube.com/watch?v=qU4lFYp3KiQ) for a walkthrough of the installation.
+
 ## Enable Gatsby watch mode for drafts
 
 We have enabled the watch mode in the `gatsby-source-sanity` plugin, which means that your frontend will automatically update with content changes whenever you publish them. If you want the frontend to show content changes in real time, you must do the following:
