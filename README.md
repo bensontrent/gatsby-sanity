@@ -58,7 +58,6 @@ git clone git@github.com:sanity-io/example-company-website-gatsby-sanity-combo.g
 cd example-company-website-gatsby-sanity-combo
 npm install
 
-<<<<<<< HEAD
 # Install or upgrade the Sanity CLI to
 # make sure you are on v0.140.0 or higher
 npm install -g @sanity/cli
