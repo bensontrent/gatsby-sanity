@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { MdPerson } from 'react-icons/md'
-=======
 import MdPerson from 'react-icons/lib/md/person'
->>>>>>> first commit
 
 export default {
   name: 'person',
@@ -20,10 +16,7 @@ export default {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
-<<<<<<< HEAD
       description: 'Some frontend will require a slug to be set to be able to show the person',
-=======
->>>>>>> first commit
       options: {
         source: 'name',
         maxLength: 96
@@ -56,10 +49,5 @@ export default {
       title: 'name',
       media: 'image'
     }
-<<<<<<< HEAD
   }
-=======
-  },
-
->>>>>>> first commit
 }

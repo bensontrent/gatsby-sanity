@@ -14,10 +14,6 @@ export default {
       title: 'Body',
       type: 'blockContent'
     }
-<<<<<<< HEAD
-  ]
-=======
   ],
 
->>>>>>> first commit
 }
