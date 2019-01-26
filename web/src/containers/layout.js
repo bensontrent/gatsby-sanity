@@ -4,17 +4,10 @@ import Layout from '../components/layout'
 
 const query = graphql`
   query SiteTitleQuery {
-<<<<<<< HEAD
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
     }
     companyInfo: sanityCompanyInfo(_id: { regex: "/(drafts.|)companyInfo/" }) {
-=======
-    site: sanitySiteSettings(_id: { eq: "siteSettings" }) {
-      title
-    }
-    companyInfo: sanityCompanyInfo(_id: { eq: "companyInfo" }) {
->>>>>>> first commit
       name
       address1
       address2
