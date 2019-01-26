@@ -7,6 +7,7 @@ import PeopleGrid from '../components/people-grid'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import { mapEdgesToNodes, filterOutDocsWithoutSlugs } from '../lib/helpers'
+
 import { responsiveTitle1 } from '../components/typography.module.css'
 
 export const query = graphql`
@@ -46,7 +47,7 @@ const AboutPage = props => {
   }
 
   const page = data && data.page
-  const personNodes = data && data.people && mapEdgesToNodes(data.people)
+  const personNodes = data && data.people && mapEdgesToNodes(data.people).filter(filterOutDocsWithoutSlugs)
 
   if (!page) {
     throw new Error(
