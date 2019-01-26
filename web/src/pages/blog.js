@@ -17,7 +17,6 @@ export const query = graphql`
     posts: allSanityPost(
       limit: 12
       sort: { fields: [publishedAt], order: DESC }
-      filter: { slug: { current: { ne: null } } }
     ) {
 >>>>>>> first commit
       edges {
