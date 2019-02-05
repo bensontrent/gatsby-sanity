@@ -13,7 +13,7 @@ This examples combines [Gatsby](https://www.gatsbyjs.org/) site generation with 
 - [Contributing](#contributing)
 - [License](#license)
 
-[![Watch a video about the company website built with Gatsby using Sanity.io as a headless CMS](https://cdn.sanity.io/images/3do82whm/production/4f652e6d114e7010aa633b81cbcb97c335980fc8-1920x1080.png?w=500)](https://www.youtube.com/watch?v=STtpXBvJmDA)
+[![Watch a video about the company website built with Gatsby using Sanity.io as a headless CMS](https://cdn.sanity.io/images/3do82whm/production/4f652e6d114e7010aa633b81cbcb97c335980fc8-1920x1080.png?w=500)](https://www.youtube.com/watch?v=STtpXBvJmDA) [![Greenkeeper badge](https://badges.greenkeeper.io/bensontrent/gatsby-sanity.svg)](https://greenkeeper.io/)
 
 [See the example up and running](https://www.youtube.com/watch?v=STtpXBvJmDA)
 
