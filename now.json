@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "name": "gatsby-sanity",
-=======
-  "name": "example-company-website-gatsby-sanity-combo",
->>>>>>> first commit
   "builds": [
     {
       "src": "web/package.json",
@@ -12,9 +8,5 @@
       "config": { "distDir": "web/public" }
     }
   ],
-<<<<<<< HEAD
   "alias": ["gatsby-sanity.now.sh"]
-=======
-  "alias": ["example-company-website-gatsby-sanity-combo.now.sh"]
->>>>>>> first commit
 }
