@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "gatsby-sanity-combo-frontend",
+  "name": "gatsby-sanity-frontend",
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
     "build": "gatsby build",
