@@ -9,3 +9,6 @@
 /.idea
 /.code
 /web/.env
+/web/public
+*/.cache
+*/node_modules
