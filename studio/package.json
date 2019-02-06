@@ -21,7 +21,8 @@
     "@sanity/desk-tool": "^0.140.2",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-icons": "^3.3.0"
   },
   "devDependencies": {
     "eslint": "^5.11.1",
