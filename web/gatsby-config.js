@@ -19,6 +19,14 @@ module.exports = {
         watchMode: true,
         overlayDrafts: true
       }
+    },
+
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        // eslint-disable-next-line no-useless-escape
+        fonts: [`Open+Sans\:400`, 'Montserrat:300']
+      }
     }
   ]
 }

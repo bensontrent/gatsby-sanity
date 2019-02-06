@@ -26,6 +26,7 @@
     outline: none;
     -webkit-font-smoothing: inherit;
     appearance: none;
+    -moz-appearance: none;
     font: inherit;
     background: none;
     border: none;

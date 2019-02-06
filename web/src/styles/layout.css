@@ -1,5 +1,4 @@
 @import './vars.css';
-
 html {
   font-family: 'Open Sans', sans-serif;
   line-height: var(--font-base-line-height);
@@ -12,6 +11,16 @@ body {
   margin: 0;
 }
 
-html, body, body > div, body > div > div {
+html,
+body,
+body > div,
+body > div > div {
   height: 100%;
+}
+
+h1,
+h2,
+h3,
+title {
+  font-family: 'Montserrat', sans-serif;
 }

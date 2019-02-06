@@ -31,7 +31,8 @@
 
     @media (hover: hover) {
       @nest &:hover {
-        text-decoration: underline;
+        text-decoration: none;
+        color: midnightblue;
       }
     }
   }
@@ -39,6 +40,7 @@
 
 .toggleNavButton {
   appearance: none;
+  -moz-appearance: none;
   font-size: 25px;
   border: none;
   background: none;
@@ -71,7 +73,8 @@
 
   @media (hover: hover) {
     @nest & ul li a:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      color: midnightblue;
     }
   }
 
