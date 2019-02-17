@@ -9,6 +9,7 @@ export default {
   title: 'Company Info',
   type: 'document',
   liveEdit: false,
+   __experimental_actions: ['update', 'publish', /*'create', 'delete'*/],
   icon: MdBusiness,
   fields: [
     {
