@@ -16,10 +16,7 @@ export const query = graphql`
       keywords
     }
 
-    projects: allSanityProject(
-      limit: 6
-      sort: { fields: [publishedAt], order: DESC }
-    ) {
+    projects: allSanityProject(limit: 6, sort: { fields: [publishedAt], order: DESC }) {
       edges {
         node {
           id
@@ -54,10 +51,7 @@ export const query = graphql`
       }
     }
 
-    posts: allSanityPost(
-      limit: 6
-      sort: { fields: [publishedAt], order: DESC }
-    ) {
+    posts: allSanityPost(limit: 6, sort: { fields: [publishedAt], order: DESC }) {
       edges {
         node {
           id

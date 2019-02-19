@@ -3,9 +3,15 @@ const {
   api: { projectId, dataset }
 } = requireConfig('../studio/sanity.json')
 
+var copydir = require('copy-dir')
+
+copydir.sync('./src/pages/calculator/', './project/calculator/demo')
+
 module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
@@ -22,7 +28,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-
         trackingId: 'UA-728912-19',
         // Puts tracking script in the head instead of the body
         head: false,
