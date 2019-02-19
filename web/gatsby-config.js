@@ -4,9 +4,15 @@ const {
 
 require('dotenv').config()
 
+var copydir = require('copy-dir')
+
+copydir.sync('./src/pages/calculator/', './project/calculator/demo')
+
 module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
@@ -20,12 +26,21 @@ module.exports = {
         overlayDrafts: true
       }
     },
-
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // eslint-disable-next-line no-useless-escape
-        fonts: [`Open+Sans\:400`, 'Montserrat:300']
+        trackingId: 'UA-728912-19',
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: false,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ['/preview/**'],
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'bensontrent.com'
       }
     }
   ]

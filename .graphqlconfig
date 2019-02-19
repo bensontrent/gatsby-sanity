@@ -1,0 +1,19 @@
+{
+  "schemaPath": "graphql.schema.json",
+  "includes": [
+    "*.graphql",
+    "graphql.schema.json"
+  ],
+  "excludes": [
+    "temp/**",
+    "web/.cache/**",
+    "web/node_modules/**",
+    "node_modules/**",
+    "studio/dist/**"
+  ],
+  "extensions": {
+    "endpoints": {
+      "dev": "http://localhost:8000/___graphql"
+    }
+  }
+}
