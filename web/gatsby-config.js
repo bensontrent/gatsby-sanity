@@ -4,8 +4,6 @@ const {
 
 require('dotenv').config()
 
-var copydir = require('copy-dir')
-
 module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
