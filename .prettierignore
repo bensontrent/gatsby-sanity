@@ -1,3 +1,11 @@
 studio/config/.checksums
 .graphqlconfig
-web/src/pages/calculator/**/*
+**/calculator/**/*
+*.toml
+*.svg
+*.txt
+*.png
+*.eot
+*.ttf
+*.woff
+*.otf

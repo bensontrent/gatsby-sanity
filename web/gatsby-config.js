@@ -6,8 +6,6 @@ require('dotenv').config()
 
 var copydir = require('copy-dir')
 
-copydir.sync('./src/pages/calculator/', './public/project/calculator/demo')
-
 module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
