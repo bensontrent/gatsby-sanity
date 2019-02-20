@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "Gatsby-Sanity": {
+      "schemaPath": "graphql.schema.json",
+      "extensions": {
+        "endpoints": {
+          "dev": "http://localhost:8000/___graphql"
+        }
+      }
+    }
+  }
+}
