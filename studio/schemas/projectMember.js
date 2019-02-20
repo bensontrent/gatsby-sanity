@@ -21,7 +21,9 @@ export default {
           { title: "Developer", value: "developer" },
           { title: "Editor", value: "editor" },
           { title: "Programmer", value: "programmer" },
-          { title: "Manager", value: "manager" }
+          { title: "Manager", value: "manager" },
+          { title: "Photographer", value: "photographer" },
+          { title: "Copywriter", value: "copywriter" }
         ]
       }
     }
