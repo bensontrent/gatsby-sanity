@@ -7,10 +7,6 @@
   "project": {
     "name": "gatsbysanity"
   },
-  "api": {
-    "projectId": "7j9cnsfo",
-    "dataset": "production"
-  },
   "plugins": [
     "@sanity/base",
     "@sanity/components",
