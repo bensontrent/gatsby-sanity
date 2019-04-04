@@ -8,6 +8,7 @@
 /lerna-debug.log
 /.idea
 /.code
+/.vscode
 /web/.env
 /web/public
 */.cache
