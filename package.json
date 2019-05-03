@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "eslint-config-standard-react": "^7.0.2",
-    "lerna": "^3.13.0",
+    "lerna": "^3.13.1",
     "rimraf": "^2.6.3"
   }
 }
