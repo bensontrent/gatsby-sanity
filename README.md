@@ -20,42 +20,27 @@ This examples combines [Gatsby](https://www.gatsbyjs.org/) site generation with 
 ## Features
 
 **A company website built with Gatsby**
-  * 📡 Real-time content preview in development
-  * ⏱ Fast & frugal builds
-  * 🗃 No accidental missing fields/types
-  * 🧰 Full Render Control with Portable Text
-  * 📸 gatsby-image support
-  * 🔧 Minimal configuration
 
-<img alt="Screenshot of the Gatsby Frontend" src="https://cdn.sanity.io/images/3do82whm/production/6b5621160768a7977a94dae297b30f08bac7c139-1920x1080.jpg?h=500&fit=max" width="500">
+- 📡 Real-time content preview in development
+- ⏱ Fast & frugal builds
+- 🗃 No accidental missing fields/types
+- 🧰 Full Render Control with Portable Text
+- 📸 gatsby-image support
+- 🔧 Minimal configuration
 
 **Sanity Studio with a schema for**
-  * 🏢 Company info
-  * 📃 Pages
-  * 👨🏼‍🎨 Projects
-  * 👩🏾‍💻 People
-  * 📰 Blog posts
 
-<img alt="Screenshot of the Sanity Studio" src="https://cdn.sanity.io/images/3do82whm/production/437719211087e3345ffb6a2bf0840c1849be1158-1920x1080.jpg?h=500&fit=max" width="500">
-
+- 🏢 Company info
+- 📃 Pages
+- 👨🏼‍🎨 Projects
+- 👩🏾‍💻 People
+- 📰 Blog posts
 
 ## Installation
 
 Read the [step-by-step blog post](https://www.sanity.io/blog/how-to-quickly-set-up-a-gatsby-js-jamstack-website-with-a-headless-cms).
 
 ```sh
-=======
-[50% width image of the gatsby]
-=======
-![Screenshot of the Gatsby Frontend](https://cdn.sanity.io/images/3do82whm/production/98c052ccd208759285a04a272dc5d297efb41229-2028x1510.png)
->>>>>>> some improvements to the readme
-
-## Installation
-
-Read the [step-by-step blog post](https://www.sanity.io/blog/how-to-quickly-set-up-a-gatsby-js-jamstack-website-with-a-headless-cms).
-
-```sh
-
 git clone git@github.com:sanity-io/example-company-website-gatsby-sanity-combo.git
 cd example-company-website-gatsby-sanity-combo
 npm install
@@ -73,25 +58,12 @@ See the [getting started video](https://www.youtube.com/watch?v=qU4lFYp3KiQ) for
 ## Enable Gatsby watch mode for drafts
 
 We have enabled the watch mode in the `gatsby-source-sanity` plugin, which means that your frontend will automatically update with content changes whenever you publish them. If you want the frontend to show content changes in real time, you must do the following:
-=======
-# Install the Sanity CLI
-npm install -g @sanity/cli
-# Set up Sanity,io account and project (≈ 45s)
-npm run init
 
-```
-
-See the [getting started video](https://www.youtube.com/watch?v=qU4lFYp3KiQ) for a walkthrough of the installation.
-
-## Enable Gatsby watch mode for drafts
-
-We have enabled the watch mode in the `gatsby-source-sanity` plugin, which means that your frontend will automatically update with content changes whenever you publish them. If you want the frontend to show content changes in real time, you must do the following:
-
-* Go to [manage.sanity.io](https://manage.sanity.io) and find your project (or run the command `sanity manage` in the studio folder)
-* Navigate to Settings->API and scroll down to the **Tokens** section
-* Add a new token and give it **read** privileges.
-* Copy the `.env-example` file to a file called `.env` in the `/web` folder
-* Add your new token to the key: `SANITY_TOKEN="<token here>"`
+- Go to [manage.sanity.io](https://manage.sanity.io) and find your project (or run the command `sanity manage` in the studio folder)
+- Navigate to Settings->API and scroll down to the **Tokens** section
+- Add a new token and give it **read** privileges.
+- Copy the `.env-example` file to a file called `.env` in the `/web` folder
+- Add your new token to the key: `SANITY_TOKEN="<token here>"`
 
 If you restart the local development server, it will now show unpublished changes from the Studio. Note that the `.env` file is ignored by Git, because the token gives access to unpublished content in the API.
 
@@ -112,24 +84,13 @@ npm start
 # GraphiQL explorer at http://localhost:8000/___graphql
 ```
 
-
-
-
 ### Development workflow
 
 We wrote a [blog post](https://www.sanity.io/blog/get-started-with-gatsby-and-structured-content) about how to use this example, but if you would like to just start tinkering:
 
 - The Sanity Studio keeps its schemas in `./studio/schemas`. We will hot reload the editor when you edit them so just start experimenting. [Read more about our schemas here](https://www.sanity.io/docs/content-studio/the-schema).
 - We followed Gatsby conventions and [you can read all about them here](https://www.gatsbyjs.org/tutorial/).
-
-CLEAN ME UP
-
-We wrote a blog post about how to use this example, but if you would like to just start tinkering:
-
-- The Sanity Studio keeps its schemas in `
-- ./studio/schemas`. We will hot reload the editor when you edit them so just start experimenting. Read more about our schemas here
-- We followed Gatsby conventions and you can read all about them here
-
+- If you want Gatsby to not throw errors on missing fields for unpopulated data you need to redeploy the GraphQL API so we can generate schemas – `sanity graphql deploy`
 
 ## Deployment
 
