@@ -26,11 +26,7 @@
 .title {
   @media (hover: hover) {
     @nest .root:hover & {
-<<<<<<< HEAD
-      text-decoration: none;
-=======
       text-decoration: underline;
->>>>>>> first commit
     }
   }
 }

@@ -31,12 +31,7 @@
 
     @media (hover: hover) {
       @nest &:hover {
-<<<<<<< HEAD
-        text-decoration: none;
-        color: midnightblue;
-=======
         text-decoration: underline;
->>>>>>> first commit
       }
     }
   }
@@ -44,10 +39,6 @@
 
 .toggleNavButton {
   appearance: none;
-<<<<<<< HEAD
-  -moz-appearance: none;
-=======
->>>>>>> first commit
   font-size: 25px;
   border: none;
   background: none;
@@ -80,12 +71,7 @@
 
   @media (hover: hover) {
     @nest & ul li a:hover {
-<<<<<<< HEAD
-      text-decoration: none;
-      color: midnightblue;
-=======
       text-decoration: underline;
->>>>>>> first commit
     }
   }
 
