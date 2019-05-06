@@ -9,7 +9,7 @@
     "graphql-deploy": "sanity graphql deploy --playground",
     "sanity-deploy": "sanity deploy",
     "lint": "eslint .",
-    "start": "sanity start",
+    "start": "sanity start --port=3334",
     "test": "sanity check"
   },
   "dependencies": {
