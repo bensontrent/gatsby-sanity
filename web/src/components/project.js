@@ -19,7 +19,7 @@ function Project (props) {
             src={imageUrlFor(buildImageObj(mainImage))
               .width(1200)
               .height(Math.floor((9 / 16) * 1200))
-              .fit('fit')
+              .fit('crop')
               .url()}
             alt={mainImage.alt}
           />
@@ -46,18 +46,6 @@ function Project (props) {
                 <ul>
                   {categories.map(category => (
                     <li key={category._id}>{category.title}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {relatedProjects && (
-              <div className={styles.relatedProjects}>
-                <h3 className={styles.relatedProjectsHeadline}>Related projects</h3>
-                <ul>
-                  {relatedProjects.map(project => (
-                    <li key={`related_${project._id}`}>
-                      <Link to={`/project/${project.slug.current}`}>{project.title}</Link>
-                    </li>
                   ))}
                 </ul>
               </div>
