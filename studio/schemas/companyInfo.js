@@ -5,7 +5,7 @@ export default {
   title: 'Company Info',
   type: 'document',
   liveEdit: false,
-  __experimental_actions: ['update', 'publish' /* 'create', 'delete' */],
+  __experimental_actions: ['update', 'publish', /*'create', 'delete'*/],
   icon: MdBusiness,
   fields: [
     {
@@ -17,6 +17,11 @@ export default {
       name: 'email',
       title: 'Email',
       type: 'email'
+    },
+    {
+      name: 'phone',
+      title: 'Phone',
+      type: 'string'
     },
     {
       name: 'address1',
