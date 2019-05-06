@@ -3,10 +3,6 @@ const {
   api: { projectId, dataset }
 } = requireConfig('../studio/sanity.json')
 
-var copydir = require('copy-dir')
-
-copydir.sync('./src/pages/calculator/', './project/calculator/demo')
-
 module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
