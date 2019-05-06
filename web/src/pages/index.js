@@ -123,16 +123,16 @@ const IndexPage = props => {
         <h1 hidden>Welcome to {site.title}</h1>
         {projectNodes && projectNodes.length > 0 && (
           <ProjectPreviewGrid
-            title="Latest projects"
+            title='Latest projects'
             nodes={projectNodes}
-            browseMoreHref="/projects/"
+            browseMoreHref='/projects/'
           />
         )}
         {postNodes && postNodes.length > 0 && (
           <BlogPostPreviewGrid
-            title="Latest blog posts"
+            title='Latest blog posts'
             nodes={postNodes}
-            browseMoreHref="/blog/"
+            browseMoreHref='/blog/'
           />
         )}
       </Container>
