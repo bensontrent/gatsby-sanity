@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
-    "clean": "lerna clean",
+    "clean": "lerna  clean",
     "deploy": "lerna run deploy",
     "empty-cache": "rimraf web/.cache",
     "init": "cd studio && sanity init && lerna run graphql-deploy",
