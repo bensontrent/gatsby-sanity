@@ -3,6 +3,9 @@
   "name": "gatsby-sanity-studio",
   "version": "1.0.0",
   "author": "Sanity <hello@sanity.io>",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "deploy": "npm run graphql-deploy && npm run sanity-deploy",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
@@ -10,29 +13,33 @@
     "sanity-deploy": "sanity deploy",
     "lint": "eslint .",
     "start": "sanity start --port=3334",
+    "build": "sanity build",
+    "now-build": "npm run build",
+    "now-dev": "npm run build",
     "test": "sanity check"
   },
   "dependencies": {
-    "@sanity/base": "^0.140.12",
-    "@sanity/components": "^0.140.12",
-    "@sanity/core": "^0.140.12",
-    "@sanity/default-layout": "^0.140.12",
-    "@sanity/default-login": "^0.140.3",
-    "@sanity/desk-tool": "^0.140.13",
+    "@sanity/base": "^1.149.3",
+    "@sanity/cli": "^1.149.2",
+    "@sanity/components": "^1.149.3",
+    "@sanity/core": "^1.149.2",
+    "@sanity/default-layout": "^1.149.3",
+    "@sanity/default-login": "^1.149.0",
+    "@sanity/desk-tool": "^1.149.3",
     "prop-types": "^15.7.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.4",
-    "react-icons": "^3.3.0"
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-icons": "^3.9.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-config-standard-react": "^7.0.2",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-standard": "^4.0.0",
-    "prettier-eslint-cli": "^4.7.1"
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier-eslint-cli": "^5.0.0"
   }
 }

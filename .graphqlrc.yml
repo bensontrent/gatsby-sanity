@@ -1,0 +1,14 @@
+schema: 'http://localhost:8000/___graphql'
+documents: ''
+extensions:
+  generate:
+    folders:
+      schema: ./generated/server/src/schema
+      client: ./generated/client/graphql
+      model: ./generated/model
+      resolvers: ./generated/server/src/resolvers
+  endpoints:
+    default: http://localhost:8000/___graphql
+  codegen:
+    studio/schemas/generated/schema.graphql:
+      - schema-ast

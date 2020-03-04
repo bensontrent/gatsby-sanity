@@ -13,3 +13,4 @@
 /web/public
 */.cache
 */node_modules
+/web/redux**

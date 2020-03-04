@@ -91,7 +91,7 @@ We wrote a [blog post](https://www.sanity.io/blog/get-started-with-gatsby-and-st
 
 - The Sanity Studio keeps its schemas in `./studio/schemas`. We will hot reload the editor when you edit them so just start experimenting. [Read more about our schemas here](https://www.sanity.io/docs/content-studio/the-schema).
 - We followed Gatsby conventions and [you can read all about them here](https://www.gatsbyjs.org/tutorial/).
-- If you want Gatsby to not throw errors on missing fields for unpopulated data you need to redeploy the GraphQL API so we can generate schemas – `sanity graphql deploy`
+- If you want Gatsby to not throw errors on missing fields for unpopulated data you need to redeploy the GraphQL API so we can generate schemas – `npm run graphql-deploy`
 
 
 ## Deployment
@@ -103,7 +103,7 @@ npm run graphql-deploy
 # Deploy the Sanity Studio to *.sanity.studio
 npm run sanity-deploy
 
-# Build & deploy to Zeit's Now
+# Build & deploy to Zeit's Now. Remember to set `basePath` to "/studio" in sanity.json
 npm run now-deploy
 ```
 
