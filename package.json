@@ -7,7 +7,8 @@
     "node": "10.x"
   },
   "scripts": {
-    "clean": "lerna  clean",
+    "build": "lerna run build",
+    "clean": "lerna clean",
     "deploy": "lerna run deploy",
     "empty-cache": "rimraf web/.cache",
     "init": "cd studio && sanity init && lerna run graphql-deploy",
