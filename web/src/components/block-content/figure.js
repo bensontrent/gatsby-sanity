@@ -26,12 +26,13 @@ function Figure (props) {
           slideChangeAnimation="scale-in"
         />
         {props.asset && (
-          <a onClick={() => setToggler(!toggler)}>
+          <a onClick={() => (props.hasLightbox) ? setToggler(!toggler) : null} disabled={!props.hasLightbox}>
             <img
               src={imageUrlFor(buildImageObj(props))
                 .width(1200)
                 .url()}
               alt={props.alt}
+              style={props.css}
             />
           </a>
         )}
